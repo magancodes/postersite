@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+
 const Banner = () => {
   const images = [
     '/image/got_1.png',
@@ -18,9 +19,9 @@ const Banner = () => {
 
   return (
     <div className="banner overflow-y-hidden w-full text-black grid-background">
-      <div className="slider" style={{ '--quantity': images.length }}>
+      <div className="slider" style={{ '--quantity': images.length } as any}>
         {images.map((src, index) => (
-          <div className="item" key={index} style={{ '--position': index + 1 }}>
+          <div className="item" key={index} style={{ '--position': index + 1 } as any}>
             <img src={src}  />
           </div>
         ))}

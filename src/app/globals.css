@@ -332,12 +332,34 @@ header a{
     z-index: 2;
     background-image: url(/image/bg.png);
 }
+/* globals.css */
+
+
+.slider {
+  display: grid;
+  grid-template-columns: repeat(var(--quantity), 1fr);
+  gap: 1rem;
+}
+
+.item {
+  grid-column: var(--position);
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
 .banner .slider{
     position: absolute;
     width: 200px;
     height: 250px;
     top: 10%;
     left: calc(50% - 100px);
+    
     transform-style: preserve-3d;
     transform: perspective(1000px);
     animation: autoRun 20s linear infinite;
