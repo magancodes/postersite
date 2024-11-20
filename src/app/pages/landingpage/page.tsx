@@ -5,10 +5,10 @@ import Posterzone from '@/app/components/posterzone'
 import Footer from '@/app/components/team'
 export default function page() {
   return (
-    <><Carousel/>
+    <div><Carousel/>
     <Banner/>
     <Posterzone/>
     <Footer/>
-    </>
+    </div>
   )
 }
